@@ -11,24 +11,74 @@
 </head>
 
 <body>
-  <header class="titulo">FORMULARIO</header>
+  <header class="titulo">
+    <h1>FORMULARIO</h1>
+  </header>
   <main class="content"><br>
-    <div>
-      <label for="numero-ficha">Número de ficha</label><br>
-      <input type="text" class="numero-ficha" name="numero-ficha" id="numero-ficha" placeholder="Eje. 1234567" required>
-    </div>
-    <div>
-      <label for="nombre">Nombre</label><br>
-      <input type="text" class="nombre" name="nombre" id="nombre" placeholder="Eje. juan Pepito" required>
-    </div>
-    <div>
-      <label for="apellidos">Apellidos</label><br>
-      <input type="text" class="apellidos" name="apellidos" placeholder="Eje. Perez Zapata" id="apellidos" required>
-    </div>
-    <div>
-      <label for="correo">Correo</label><br>
-      <input type="email" name="correo" id="correo" required>
-    </div>
+    <form>
+      <div>
+        <label for="numero-ficha">Número de ficha</label><br>
+        <input type="text" class="numero-ficha" name="numero-ficha" id="numero-ficha" placeholder="Eje. 1234567"
+          required>
+      </div>
+      <div>
+        <label for="nombre">Nombre</label><br>
+        <input type="text" class="nombre" name="nombre" id="nombre" placeholder="Eje. juan Pepito" required>
+      </div>
+      <div>
+        <label for="apellidos">Apellidos</label><br>
+        <input type="text" class="apellidos" name="apellidos" placeholder="Eje. Perez Zapata" id="apellidos" required>
+      </div>
+      <div>
+        <label for="correo">Correo</label><br>
+        <input type="email" name="correo" id="correo" required>
+      </div>
+      <div>
+        <label for="number">Teléfono</label><br>
+        <input type="tel" name="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10">
+      </div>
+      <div>
+        <br>
+        <input type="radio" name="sexo" value="hombre">
+        <label for="hombre">Hombre</label>
+        <input type="radio" name="sexo" value="mujer">
+        <label for="mujer">Mujer</label>
+        <input type="radio" name="sexo" value="hombre">
+        <label for="otro">Otro</label>
+      </div>
+      <br>
+      <select name="ciudad" id="ciudad">
+        <option value="bogota">Bogotá</option>
+        <option value="bucaramanga">Bucaramanga</option>
+        <option value="cali">cali</option>
+        <option value="barranquilla">Barranquilla</option>
+        <option value="medellin">Medellin</option>
+      </select>
+      <div>
+        <h2>Seleccione minimo 3 habilidades</h2>
+        <input type="checkbox" name="list" value="html">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" name="list" value="css">
+        <label for="css">CSS</label><br>
+        <input type="checkbox" name="list" value="javascript">
+        <label for="javajcript">JavaScript</label><br>
+        <input type="checkbox" name="list" value="php">
+        <label for="php">PHP</label><br>
+        <input type="checkbox" name="list" value="java">
+        <label for="java">JAVA</label><br>
+        <input type="checkbox" name="list" value="sql">
+        <label for="sql">SQL</label><br>
+        <input type="checkbox" name="list" value="uml">
+        <label for="uml">UML</label><br>
+      </div>
+      <br>
+      <input type="submit">
+      <div>
+
+      </div>
+    </form>
+
+
     <div class="" name="" placeholder="" id=""></div>
   </main>
 </body>
